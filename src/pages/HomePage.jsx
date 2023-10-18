@@ -26,7 +26,7 @@ const HomePage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-purple-500 text-white px-6 py-2 rounded-lg hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+              <button className="bg-purple-500 text-white px-6 py-2  rounded-lg hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
                 Hire ME
               </button>
             </a>
@@ -34,11 +34,11 @@ const HomePage = () => {
         </div>
 
         <div className=" mt-28 ml-20 flex items-center ">
-          <div className="w-1/2 px-6">
-            <h1 className="text-6xl font-bold text-purple-600 mb-6 shadow-lg">
+          <div className="w-screen px-6">
+            <h1 className="text-5xl md:text-6xl sm:text-4xl font-bold text-purple-600 mb-6  shadow-lg">
               We Have The Best Translation Services
             </h1>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-gray-700 mb-8 hidden md:block">
               Welcome to our digital heaven where languages unite and barriers
               dissolve. At Aviral Digital Solutions, we are not just
               translators, we are architects of understanding in a diverse
@@ -46,15 +46,15 @@ const HomePage = () => {
               businesses and amplify global connections.
             </p>
             <a href="#about">
-              <button className="bg-purple-800 text-white px-6 py-3 rounded-full hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+              <button className="bg-purple-800 text-white px-6 py-3 rounded-xl md:rounded-full hover:bg-purple-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
                 Get Started
               </button>
             </a>
           </div>
           <div className="w-1/2 flex justify-center">
             <div
-              className={`w-84 h-64 relative overflow-hidden transform ${
-                isMoving ? "translate-x-40" : ""
+              className={`w-64 h-64 hidden md:block  md:h-60 relative overflow-hidden transform ${
+                isMoving ? "translate-x-24 " : ""
               } transition-transform duration-1000 ease-in-out`}
             >
               <img
