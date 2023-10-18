@@ -35,7 +35,7 @@ const projects = [
     id: 5,
     title: "Media and Entertainment",
     description:
-      ": Translated subtitles and scripts for movies, TV shows andonline content allowing creators to connect with region audiences on a deeper level.",
+      " Translated subtitles and scripts for movies, TV shows andonline content allowing creators to connect with region audiences on a deeper level.",
     imageUrl:
       "https://img.freepik.com/free-psd/vr-event-landing-page-design-template_23-2149229515.jpg",
   },
