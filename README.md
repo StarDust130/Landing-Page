@@ -1,7 +1,7 @@
  <h1>👋 Welcome to Our Awesome Landing Page! 👏</h1>
 
    <p>Thank you for visiting our fantastic landing page. Here's everything you need to know:</p>
-    <a href="https://your-landing-page-url.com" target="_blank">
+    <a href="https://stardust-landing-page-project.netlify.app/" target="_blank">
         <button style="background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
             See Live
         </button>
