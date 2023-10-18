@@ -13,7 +13,7 @@
   <h2>🚀 Getting Started</h2>
     <ol>
         <li>Clone the repository:</li>
-        <pre><code>git clone https://github.com/your-landing-page.git</code></pre>
+        <pre><code>git clone https://github.com/StarDust130/Landing-Page.git</code></pre>
         <li>Open <code>index.html</code> in your web browser.</li>
     </ol>
 
