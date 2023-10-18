@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Borel&family=Concert+One&family=Dancing+Script&family=Fasthand&family=Lato:ital@1&family=Raleway&family=Special+Elite&family=Yeseva+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  
+  color: white;
+   background-image: url('https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family:   'Special Elite', cursive;
+  scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+nav{
+    background: rgba(0, 0, 0, 0.3); 
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+nav a{
+    background: transparent;
+    padding:0.9rem ;
+    border-radius: 50%;
+    display: flex;
+    color:var(--color-light) ;
+    font-size: 1.1rem;
+
+}
+nav a:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+nav a.active{
+    background: var(--color-primary);
+    color: var(--color-bg);
+}
+footer{
+    background-color: black;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 7rem;
+}
+
+footer a{
+    color: #fff;
+}
+.footer__logo{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.permalink{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto 3rem;
+}
+
+.footer_social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+.footer_social a{
+    color: #fff;
+   padding: 0.8rem;
+   border-radius: 0.7rem;
+   display: flex;
+   
+}
+
+.footer_social a:hover{
+    background: transparent;
+   
+    transform: scale(1.5);
+}
+
+.footer_copyright small {
+    margin-bottom: 4rem;
+    color: var(--color-bg);
+    color: #fff;
+   
+}
+
+/* =========================MEDIA QUERIES(Small)================== */
+
+@media screen and (max-width: 600px) {
+    .permalink{
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    .footer_social{
+        margin-bottom: 2.6rem;
+    }
+    
+}
+.container.contact_container{
+    width: 58%;
+   display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 10%;
+
+}
+.contact_options {
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+.contact_option {
+   background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);  
+}
+.contact_option:hover{
+    border: 1px solid var(--color-primary);
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+.contact_option-icon{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.contact_option a{
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+/* ===============================FORM============================ */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+input , textarea{
+    background: transparent;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-primary-variant);
+    transition: var(--transition);  
+    resize: none;
+    color: white;
+    width: 100%;
+}
+input:focus{
+    border-color: var(--color-primary);
+}
+textarea:focus{
+    border-color: var(--color-primary);
+}
+input[type="submit"]{
+    width: max-content;
+    align-self: flex-start;
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);  
+}
+input[type="submit"]:hover{
+    color: var(--color-bg);
+    border-color: transparent;
+}
+/* ===========================MEDIA QUERIES=========================*/
+
+@media screen and (max-width: 1024px) {
+    .container.contact_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+   
+}
+@media screen and (max-width: 600px) {
+    .container.contact_container{
+        width: var(--container-width-sm);
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+   
+}
